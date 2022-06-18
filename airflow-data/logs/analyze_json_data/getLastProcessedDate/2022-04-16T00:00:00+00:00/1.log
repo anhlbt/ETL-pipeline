@@ -1,0 +1,22 @@
+[2022-04-17 01:54:14,044] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: analyze_json_data.getLastProcessedDate 2022-04-16T00:00:00+00:00 [queued]>
+[2022-04-17 01:54:14,054] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: analyze_json_data.getLastProcessedDate 2022-04-16T00:00:00+00:00 [queued]>
+[2022-04-17 01:54:14,054] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-17 01:54:14,054] {taskinstance.py:1043} INFO - Starting attempt 1 of 4
+[2022-04-17 01:54:14,054] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-17 01:54:14,064] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): getLastProcessedDate> on 2022-04-16T00:00:00+00:00
+[2022-04-17 01:54:14,067] {standard_task_runner.py:52} INFO - Started process 272 to run task
+[2022-04-17 01:54:14,070] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'analyze_json_data', 'getLastProcessedDate', '2022-04-16T00:00:00+00:00', '--job-id', '185', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/dagRun.py', '--cfg-path', '/tmp/tmpt5gvfcht', '--error-file', '/tmp/tmpj_73cte8']
+[2022-04-17 01:54:14,072] {standard_task_runner.py:77} INFO - Job 185: Subtask getLastProcessedDate
+[2022-04-17 01:54:14,106] {logging_mixin.py:104} INFO - Running <TaskInstance: analyze_json_data.getLastProcessedDate 2022-04-16T00:00:00+00:00 [running]> on host 184ae5fa8a0d
+[2022-04-17 01:54:14,143] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Renato_Otescu
+AIRFLOW_CTX_DAG_ID=analyze_json_data
+AIRFLOW_CTX_TASK_ID=getLastProcessedDate
+AIRFLOW_CTX_EXECUTION_DATE=2022-04-16T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-04-16T00:00:00+00:00
+[2022-04-17 01:54:14,584] {python.py:118} INFO - Done. Returned value was: None
+[2022-04-17 01:54:14,591] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=analyze_json_data, task_id=getLastProcessedDate, execution_date=20220416T000000, start_date=20220417T015414, end_date=20220417T015414
+[2022-04-17 01:54:14,612] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-04-17 01:54:14,642] {local_task_job.py:146} INFO - Task exited with return code 0

@@ -1,0 +1,41 @@
+[2022-04-17 01:54:34,891] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: analyze_json_data.saveToDB 2022-04-16T00:00:00+00:00 [queued]>
+[2022-04-17 01:54:34,898] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: analyze_json_data.saveToDB 2022-04-16T00:00:00+00:00 [queued]>
+[2022-04-17 01:54:34,899] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-17 01:54:34,899] {taskinstance.py:1043} INFO - Starting attempt 1 of 4
+[2022-04-17 01:54:34,899] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-17 01:54:34,911] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): saveToDB> on 2022-04-16T00:00:00+00:00
+[2022-04-17 01:54:34,916] {standard_task_runner.py:52} INFO - Started process 550 to run task
+[2022-04-17 01:54:34,919] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'analyze_json_data', 'saveToDB', '2022-04-16T00:00:00+00:00', '--job-id', '189', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/dagRun.py', '--cfg-path', '/tmp/tmpqmxgstw8', '--error-file', '/tmp/tmpsyi_ng3q']
+[2022-04-17 01:54:34,921] {standard_task_runner.py:77} INFO - Job 189: Subtask saveToDB
+[2022-04-17 01:54:34,953] {logging_mixin.py:104} INFO - Running <TaskInstance: analyze_json_data.saveToDB 2022-04-16T00:00:00+00:00 [running]> on host 184ae5fa8a0d
+[2022-04-17 01:54:34,983] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Renato_Otescu
+AIRFLOW_CTX_DAG_ID=analyze_json_data
+AIRFLOW_CTX_TASK_ID=saveToDB
+AIRFLOW_CTX_EXECUTION_DATE=2022-04-16T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-04-16T00:00:00+00:00
+[2022-04-17 01:54:35,015] {base_aws.py:362} INFO - Airflow Connection: aws_conn_id=aws_default
+[2022-04-17 01:54:35,015] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-04-17 01:54:35,016] {base_aws.py:171} INFO - Credentials retrieved from extra_config['s3_config_file']
+[2022-04-17 01:54:35,016] {base_aws.py:81} INFO - Creating session with aws_access_key_id=AKIA2RNRZHIUSS5EYBCG region_name=None
+[2022-04-17 01:54:35,025] {base_aws.py:151} INFO - role_arn is None
+[2022-04-17 01:54:36,020] {taskinstance.py:1455} ERROR - Cannot COPY into nonexistent table counties
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dagRun.py", line 269, in uploadToDB
+    cursor.execute(sql)
+psycopg2.errors.InternalError_: Cannot COPY into nonexistent table counties
+
+[2022-04-17 01:54:36,022] {taskinstance.py:1503} INFO - Marking task as UP_FOR_RETRY. dag_id=analyze_json_data, task_id=saveToDB, execution_date=20220416T000000, start_date=20220417T015434, end_date=20220417T015436
+[2022-04-17 01:54:36,051] {local_task_job.py:146} INFO - Task exited with return code 1

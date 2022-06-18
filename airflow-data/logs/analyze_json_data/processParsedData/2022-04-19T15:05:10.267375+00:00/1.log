@@ -1,0 +1,41 @@
+[2022-04-19 15:05:19,628] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: analyze_json_data.processParsedData 2022-04-19T15:05:10.267375+00:00 [queued]>
+[2022-04-19 15:05:19,641] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: analyze_json_data.processParsedData 2022-04-19T15:05:10.267375+00:00 [queued]>
+[2022-04-19 15:05:19,641] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-19 15:05:19,642] {taskinstance.py:1043} INFO - Starting attempt 1 of 4
+[2022-04-19 15:05:19,642] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-19 15:05:19,647] {taskinstance.py:1063} INFO - Executing <Task(BashOperator): processParsedData> on 2022-04-19T15:05:10.267375+00:00
+[2022-04-19 15:05:19,651] {standard_task_runner.py:52} INFO - Started process 7595 to run task
+[2022-04-19 15:05:19,654] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'analyze_json_data', 'processParsedData', '2022-04-19T15:05:10.267375+00:00', '--job-id', '223', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/dagRun.py', '--cfg-path', '/tmp/tmpf926iwgo', '--error-file', '/tmp/tmpgum76usf']
+[2022-04-19 15:05:19,656] {standard_task_runner.py:77} INFO - Job 223: Subtask processParsedData
+[2022-04-19 15:05:19,685] {logging_mixin.py:104} INFO - Running <TaskInstance: analyze_json_data.processParsedData 2022-04-19T15:05:10.267375+00:00 [running]> on host 79776f5a39da
+[2022-04-19 15:05:19,713] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Renato_Otescu
+AIRFLOW_CTX_DAG_ID=analyze_json_data
+AIRFLOW_CTX_TASK_ID=processParsedData
+AIRFLOW_CTX_EXECUTION_DATE=2022-04-19T15:05:10.267375+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-04-19T15:05:10.267375+00:00
+[2022-04-19 15:05:19,714] {bash.py:135} INFO - Tmp dir root location: 
+ /tmp
+[2022-04-19 15:05:19,714] {bash.py:158} INFO - Running command: python /opt/airflow/sparkFiles/sparkProcess.py
+[2022-04-19 15:05:19,723] {bash.py:169} INFO - Output:
+[2022-04-19 15:05:20,829] {bash.py:173} INFO - WARNING: An illegal reflective access operation has occurred
+[2022-04-19 15:05:20,829] {bash.py:173} INFO - WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/home/airflow/.local/lib/python3.6/site-packages/pyspark/jars/spark-unsafe_2.12-3.2.1.jar) to constructor java.nio.DirectByteBuffer(long,int)
+[2022-04-19 15:05:20,829] {bash.py:173} INFO - WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+[2022-04-19 15:05:20,829] {bash.py:173} INFO - WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+[2022-04-19 15:05:20,829] {bash.py:173} INFO - WARNING: All illegal access operations will be denied in a future release
+[2022-04-19 15:05:21,007] {bash.py:173} INFO - Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+[2022-04-19 15:05:21,008] {bash.py:173} INFO - Setting default log level to "WARN".
+[2022-04-19 15:05:21,008] {bash.py:173} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2022-04-19 15:05:21,122] {bash.py:173} INFO - 22/04/19 15:05:21 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2022-04-19 15:05:26,405] {bash.py:173} INFO - 22/04/19 15:05:26 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+[2022-04-19 15:05:26,419] {bash.py:173} INFO - 22/04/19 15:05:26 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+[2022-04-19 15:05:26,432] {bash.py:173} INFO - 22/04/19 15:05:26 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+[2022-04-19 15:05:26,752] {bash.py:173} INFO - 22/04/19 15:05:26 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+[2022-04-19 15:05:27,292] {bash.py:173} INFO - /home/airflow/.local/lib/python3.6/site-packages/pyspark/context.py:238: FutureWarning: Python 3.6 support is deprecated in Spark 3.2.
+[2022-04-19 15:05:27,292] {bash.py:173} INFO -   FutureWarning
+[2022-04-19 15:05:27,737] {bash.py:177} INFO - Command exited with return code 0
+[2022-04-19 15:05:27,755] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=analyze_json_data, task_id=processParsedData, execution_date=20220419T150510, start_date=20220419T150519, end_date=20220419T150527
+[2022-04-19 15:05:27,778] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-04-19 15:05:27,798] {local_task_job.py:146} INFO - Task exited with return code 0

@@ -1,0 +1,55 @@
+[2022-04-11 14:33:46,569] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: analyze_json_data.parseJsonFile 2022-04-11T14:32:59.946213+00:00 [queued]>
+[2022-04-11 14:33:46,581] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: analyze_json_data.parseJsonFile 2022-04-11T14:32:59.946213+00:00 [queued]>
+[2022-04-11 14:33:46,582] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-11 14:33:46,582] {taskinstance.py:1043} INFO - Starting attempt 1 of 4
+[2022-04-11 14:33:46,582] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-11 14:33:46,589] {taskinstance.py:1063} INFO - Executing <Task(BranchPythonOperator): parseJsonFile> on 2022-04-11T14:32:59.946213+00:00
+[2022-04-11 14:33:46,594] {standard_task_runner.py:52} INFO - Started process 5847 to run task
+[2022-04-11 14:33:46,598] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'analyze_json_data', 'parseJsonFile', '2022-04-11T14:32:59.946213+00:00', '--job-id', '112', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/dagRun.py', '--cfg-path', '/tmp/tmpgy_xru5z', '--error-file', '/tmp/tmpwzzh19av']
+[2022-04-11 14:33:46,600] {standard_task_runner.py:77} INFO - Job 112: Subtask parseJsonFile
+[2022-04-11 14:33:46,631] {logging_mixin.py:104} INFO - Running <TaskInstance: analyze_json_data.parseJsonFile 2022-04-11T14:32:59.946213+00:00 [running]> on host ac6721d0506b
+[2022-04-11 14:33:46,662] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Renato_Otescu
+AIRFLOW_CTX_DAG_ID=analyze_json_data
+AIRFLOW_CTX_TASK_ID=parseJsonFile
+AIRFLOW_CTX_EXECUTION_DATE=2022-04-11T14:32:59.946213+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-04-11T14:32:59.946213+00:00
+[2022-04-11 14:33:46,674] {s3.py:793} INFO - Downloading source S3 file from Bucket airflow-raw with path countyData.json
+[2022-04-11 14:33:46,674] {base_aws.py:362} INFO - Airflow Connection: aws_conn_id=aws_default
+[2022-04-11 14:33:46,675] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-04-11 14:33:46,675] {base_aws.py:171} INFO - Credentials retrieved from extra_config['s3_config_file']
+[2022-04-11 14:33:46,675] {base_aws.py:81} INFO - Creating session with aws_access_key_id=AKIA2RNRZHIUSS5EYBCG region_name=None
+[2022-04-11 14:33:46,685] {base_aws.py:151} INFO - role_arn is None
+[2022-04-11 14:33:47,365] {base_aws.py:362} INFO - Airflow Connection: aws_conn_id=aws_default
+[2022-04-11 14:33:47,366] {base_aws.py:171} INFO - Credentials retrieved from extra_config['s3_config_file']
+[2022-04-11 14:33:47,366] {base_aws.py:81} INFO - Creating session with aws_access_key_id=AKIA2RNRZHIUSS5EYBCG region_name=None
+[2022-04-11 14:33:47,380] {base_aws.py:151} INFO - role_arn is None
+[2022-04-11 14:33:54,866] {taskinstance.py:1455} ERROR - Invalid control character at: line 1 column 2720 (char 2719)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 324, in execute
+    branch = super().execute(context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dagRun.py", line 164, in readJsonData
+    jsonData = json.load(data)
+  File "/usr/local/lib/python3.6/json/__init__.py", line 299, in load
+    parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/usr/local/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Invalid control character at: line 1 column 2720 (char 2719)
+[2022-04-11 14:33:54,916] {taskinstance.py:1503} INFO - Marking task as UP_FOR_RETRY. dag_id=analyze_json_data, task_id=parseJsonFile, execution_date=20220411T143259, start_date=20220411T143346, end_date=20220411T143354
+[2022-04-11 14:33:54,979] {local_task_job.py:146} INFO - Task exited with return code 1

@@ -26,12 +26,12 @@ if database == 'mongoDB':
 else:
     # Amazon Redshift database connection details
     # the details bellow can also be saved in environment variables
-    dbname = 'testairflow'
-    host = '*******************************.eu-central-1.redshift.amazonaws.com'
-    port = '****'
-    user = '*********'
-    password = '********************'
-    awsIAMrole = 'arn:aws:iam::************:role/*******'
+    dbname = 'dev'
+    host = 'redshift-cluster-1.cfu1yuuzougo.ap-southeast-1.redshift.amazonaws.com'
+    port = 5439
+    user = 'anhlbto'
+    password = 'Lbtanh123'
+    awsIAMrole = 'arn:aws:iam::724611709481:role/aws-service-role/redshift.amazonaws.com/AWSServiceRoleForRedshift'
 
 
 def getDBdate(ti):
@@ -147,7 +147,7 @@ def readJsonData(ti):
     # name of the file in the AWS s3 bucket
     key = 'countyData.json'
     # name of the AWS s3 bucket
-    bucket = 'renato-airflow-raw'
+    bucket = 'airflow-raw'
     # directory in which the file will be saved
     path = '/opt/airflow/sparkFiles'
     # download the file
@@ -161,7 +161,7 @@ def readJsonData(ti):
     # are not encoded in utf-8 (which is usually used)
     with open(filename, encoding='latin-1') as data:
         # load the data as a dictionary (key, value pairs)
-        jsonData = json.load(data)
+        jsonData = json.load(data, strict=False)
         # make sure that historicalData is in the dictionary keys
         if 'historicalData' in jsonData.keys():
             # empty list for saving the parsed data
@@ -245,7 +245,7 @@ def uploadToDB(ti):
         # name of the file in the AWS s3 bucket
         key = 'results.csv'
         # name of the AWS s3 bucket
-        bucket = 'renato-airflow-raw'
+        bucket = 'airflow-raw'
         # load/upload the results file to the s3 bucket
         loadToS3 = hook.load_file(
             filename=results,
@@ -260,7 +260,8 @@ def uploadToDB(ti):
         cursor = conn.cursor()
         # COPY the data from the s3 loaded file into the Redshift counties collection.
         # the COPY command only appends the CSV data to the table. It does not replace
-        sql = f"""COPY counties FROM 's3://renato-airflow-raw/results.csv' 
+        # counties
+        sql = f"""COPY countries FROM 's3://airflow-raw/results.csv' 
                   iam_role '{awsIAMrole}' 
                   DELIMITER AS ',' 
                   DATEFORMAT 'YYYY-MM-DD' 

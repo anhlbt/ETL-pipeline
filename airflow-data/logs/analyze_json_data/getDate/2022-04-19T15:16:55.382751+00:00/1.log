@@ -1,0 +1,24 @@
+[2022-04-19 15:16:58,194] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: analyze_json_data.getDate 2022-04-19T15:16:55.382751+00:00 [queued]>
+[2022-04-19 15:16:58,206] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: analyze_json_data.getDate 2022-04-19T15:16:55.382751+00:00 [queued]>
+[2022-04-19 15:16:58,207] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-19 15:16:58,207] {taskinstance.py:1043} INFO - Starting attempt 1 of 4
+[2022-04-19 15:16:58,207] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-19 15:16:58,212] {taskinstance.py:1063} INFO - Executing <Task(BranchPythonOperator): getDate> on 2022-04-19T15:16:55.382751+00:00
+[2022-04-19 15:16:58,216] {standard_task_runner.py:52} INFO - Started process 1523 to run task
+[2022-04-19 15:16:58,219] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'analyze_json_data', 'getDate', '2022-04-19T15:16:55.382751+00:00', '--job-id', '230', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/dagRun.py', '--cfg-path', '/tmp/tmp8wppa0az', '--error-file', '/tmp/tmpd_0gu50x']
+[2022-04-19 15:16:58,221] {standard_task_runner.py:77} INFO - Job 230: Subtask getDate
+[2022-04-19 15:16:58,252] {logging_mixin.py:104} INFO - Running <TaskInstance: analyze_json_data.getDate 2022-04-19T15:16:55.382751+00:00 [running]> on host da484f0a22b0
+[2022-04-19 15:16:58,280] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=anhlbt
+AIRFLOW_CTX_DAG_ID=analyze_json_data
+AIRFLOW_CTX_TASK_ID=getDate
+AIRFLOW_CTX_EXECUTION_DATE=2022-04-19T15:16:55.382751+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-04-19T15:16:55.382751+00:00
+[2022-04-19 15:16:58,287] {python.py:118} INFO - Done. Returned value was: parseJsonFile
+[2022-04-19 15:16:58,287] {skipmixin.py:124} INFO - Following branch parseJsonFile
+[2022-04-19 15:16:58,292] {skipmixin.py:155} INFO - Skipping tasks []
+[2022-04-19 15:16:58,314] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=analyze_json_data, task_id=getDate, execution_date=20220419T151655, start_date=20220419T151658, end_date=20220419T151658
+[2022-04-19 15:16:58,343] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-04-19 15:16:58,349] {local_task_job.py:146} INFO - Task exited with return code 0

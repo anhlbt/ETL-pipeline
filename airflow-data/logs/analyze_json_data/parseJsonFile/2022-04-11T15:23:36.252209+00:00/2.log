@@ -1,0 +1,47 @@
+[2022-04-11 15:24:17,142] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: analyze_json_data.parseJsonFile 2022-04-11T15:23:36.252209+00:00 [queued]>
+[2022-04-11 15:24:17,150] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: analyze_json_data.parseJsonFile 2022-04-11T15:23:36.252209+00:00 [queued]>
+[2022-04-11 15:24:17,150] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-11 15:24:17,151] {taskinstance.py:1043} INFO - Starting attempt 2 of 4
+[2022-04-11 15:24:17,151] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-11 15:24:17,160] {taskinstance.py:1063} INFO - Executing <Task(BranchPythonOperator): parseJsonFile> on 2022-04-11T15:23:36.252209+00:00
+[2022-04-11 15:24:17,165] {standard_task_runner.py:52} INFO - Started process 591 to run task
+[2022-04-11 15:24:17,167] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'analyze_json_data', 'parseJsonFile', '2022-04-11T15:23:36.252209+00:00', '--job-id', '124', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/dagRun.py', '--cfg-path', '/tmp/tmpjo1epkfl', '--error-file', '/tmp/tmp7xfhi5ox']
+[2022-04-11 15:24:17,170] {standard_task_runner.py:77} INFO - Job 124: Subtask parseJsonFile
+[2022-04-11 15:24:17,198] {logging_mixin.py:104} INFO - Running <TaskInstance: analyze_json_data.parseJsonFile 2022-04-11T15:23:36.252209+00:00 [running]> on host e57babf4d1d4
+[2022-04-11 15:24:17,223] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Renato_Otescu
+AIRFLOW_CTX_DAG_ID=analyze_json_data
+AIRFLOW_CTX_TASK_ID=parseJsonFile
+AIRFLOW_CTX_EXECUTION_DATE=2022-04-11T15:23:36.252209+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-04-11T15:23:36.252209+00:00
+[2022-04-11 15:24:17,233] {s3.py:793} INFO - Downloading source S3 file from Bucket airflow-raw with path countyData.json
+[2022-04-11 15:24:17,234] {base_aws.py:362} INFO - Airflow Connection: aws_conn_id=aws_default
+[2022-04-11 15:24:17,234] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-04-11 15:24:17,235] {base_aws.py:171} INFO - Credentials retrieved from extra_config['s3_config_file']
+[2022-04-11 15:24:17,235] {base_aws.py:81} INFO - Creating session with aws_access_key_id=AKIA2RNRZHIUSS5EYBCG region_name=None
+[2022-04-11 15:24:17,248] {base_aws.py:151} INFO - role_arn is None
+[2022-04-11 15:24:17,916] {base_aws.py:362} INFO - Airflow Connection: aws_conn_id=aws_default
+[2022-04-11 15:24:17,917] {base_aws.py:171} INFO - Credentials retrieved from extra_config['s3_config_file']
+[2022-04-11 15:24:17,918] {base_aws.py:81} INFO - Creating session with aws_access_key_id=AKIA2RNRZHIUSS5EYBCG region_name=None
+[2022-04-11 15:24:17,929] {base_aws.py:151} INFO - role_arn is None
+[2022-04-11 15:24:22,906] {taskinstance.py:1455} ERROR - 'strict' is an invalid keyword argument for this function
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 324, in execute
+    branch = super().execute(context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dagRun.py", line 162, in readJsonData
+    with open(filename, encoding='latin-1', strict=False) as data:
+TypeError: 'strict' is an invalid keyword argument for this function
+[2022-04-11 15:24:22,908] {taskinstance.py:1503} INFO - Marking task as UP_FOR_RETRY. dag_id=analyze_json_data, task_id=parseJsonFile, execution_date=20220411T152336, start_date=20220411T152417, end_date=20220411T152422
+[2022-04-11 15:24:22,941] {local_task_job.py:146} INFO - Task exited with return code 1
