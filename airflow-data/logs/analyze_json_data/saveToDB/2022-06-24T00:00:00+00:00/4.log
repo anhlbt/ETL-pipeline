@@ -1,0 +1,61 @@
+[2022-06-25 09:13:55,526] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: analyze_json_data.saveToDB 2022-06-24T00:00:00+00:00 [queued]>
+[2022-06-25 09:13:55,536] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: analyze_json_data.saveToDB 2022-06-24T00:00:00+00:00 [queued]>
+[2022-06-25 09:13:55,537] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-25 09:13:55,537] {taskinstance.py:1043} INFO - Starting attempt 4 of 4
+[2022-06-25 09:13:55,537] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-25 09:13:55,543] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): saveToDB> on 2022-06-24T00:00:00+00:00
+[2022-06-25 09:13:55,547] {standard_task_runner.py:52} INFO - Started process 2237 to run task
+[2022-06-25 09:13:55,550] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'analyze_json_data', 'saveToDB', '2022-06-24T00:00:00+00:00', '--job-id', '361', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/dagRun.py', '--cfg-path', '/tmp/tmptur99s7u', '--error-file', '/tmp/tmp2c5ww20k']
+[2022-06-25 09:13:55,553] {standard_task_runner.py:77} INFO - Job 361: Subtask saveToDB
+[2022-06-25 09:13:55,586] {logging_mixin.py:104} INFO - Running <TaskInstance: analyze_json_data.saveToDB 2022-06-24T00:00:00+00:00 [running]> on host bb303642214a
+[2022-06-25 09:13:55,617] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Renato_Otescu
+AIRFLOW_CTX_DAG_ID=analyze_json_data
+AIRFLOW_CTX_TASK_ID=saveToDB
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-24T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-24T00:00:00+00:00
+[2022-06-25 09:13:55,646] {base_aws.py:362} INFO - Airflow Connection: aws_conn_id=aws_default
+[2022-06-25 09:13:55,647] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-06-25 09:13:55,647] {base_aws.py:171} INFO - Credentials retrieved from extra_config['s3_config_file']
+[2022-06-25 09:13:55,648] {base_aws.py:81} INFO - Creating session with aws_access_key_id=AKIA2RNRZHIUSS5EYBCG region_name=None
+[2022-06-25 09:13:55,663] {base_aws.py:151} INFO - role_arn is None
+[2022-06-25 09:13:57,251] {taskinstance.py:1455} ERROR - S3ServiceException:Access Denied,Status 403,Error AccessDenied,Rid CT8EY0J179RSH64Y,ExtRid +OuSBM56yNGrShTYfPsBJ2/iG3ilA6g/eghTyPgRCqa8iPC95te02eKcJ5Qwe94zpvA2+bHfNn8=,CanRetry 1
+DETAIL:  
+  -----------------------------------------------
+  error:  S3ServiceException:Access Denied,Status 403,Error AccessDenied,Rid CT8EY0J179RSH64Y,ExtRid +OuSBM56yNGrShTYfPsBJ2/iG3ilA6g/eghTyPgRCqa8iPC95te02eKcJ5Qwe94zpvA2+bHfNn8=,CanRetry 1
+  code:      8001
+  context:   S3 key being read : s3://airflow-raw/results.csv
+  query:     1232220
+  location:  copy_s3_scanner.cpp:301
+  process:   query0_123_1232220 [pid=13187]
+  -----------------------------------------------
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dagRun.py", line 270, in uploadToDB
+    cursor.execute(sql)
+psycopg2.errors.InternalError_: S3ServiceException:Access Denied,Status 403,Error AccessDenied,Rid CT8EY0J179RSH64Y,ExtRid +OuSBM56yNGrShTYfPsBJ2/iG3ilA6g/eghTyPgRCqa8iPC95te02eKcJ5Qwe94zpvA2+bHfNn8=,CanRetry 1
+DETAIL:  
+  -----------------------------------------------
+  error:  S3ServiceException:Access Denied,Status 403,Error AccessDenied,Rid CT8EY0J179RSH64Y,ExtRid +OuSBM56yNGrShTYfPsBJ2/iG3ilA6g/eghTyPgRCqa8iPC95te02eKcJ5Qwe94zpvA2+bHfNn8=,CanRetry 1
+  code:      8001
+  context:   S3 key being read : s3://airflow-raw/results.csv
+  query:     1232220
+  location:  copy_s3_scanner.cpp:301
+  process:   query0_123_1232220 [pid=13187]
+  -----------------------------------------------
+
+
+[2022-06-25 09:13:57,253] {taskinstance.py:1503} INFO - Marking task as FAILED. dag_id=analyze_json_data, task_id=saveToDB, execution_date=20220624T000000, start_date=20220625T091355, end_date=20220625T091357
+[2022-06-25 09:13:57,283] {local_task_job.py:146} INFO - Task exited with return code 1

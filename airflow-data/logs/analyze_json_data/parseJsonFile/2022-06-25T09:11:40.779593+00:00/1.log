@@ -1,0 +1,34 @@
+[2022-06-25 09:12:01,689] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: analyze_json_data.parseJsonFile 2022-06-25T09:11:40.779593+00:00 [queued]>
+[2022-06-25 09:12:01,704] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: analyze_json_data.parseJsonFile 2022-06-25T09:11:40.779593+00:00 [queued]>
+[2022-06-25 09:12:01,704] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-25 09:12:01,704] {taskinstance.py:1043} INFO - Starting attempt 1 of 4
+[2022-06-25 09:12:01,704] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-25 09:12:01,711] {taskinstance.py:1063} INFO - Executing <Task(BranchPythonOperator): parseJsonFile> on 2022-06-25T09:11:40.779593+00:00
+[2022-06-25 09:12:01,713] {standard_task_runner.py:52} INFO - Started process 987 to run task
+[2022-06-25 09:12:01,716] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'analyze_json_data', 'parseJsonFile', '2022-06-25T09:11:40.779593+00:00', '--job-id', '353', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/dagRun.py', '--cfg-path', '/tmp/tmplweoys5a', '--error-file', '/tmp/tmpa5sr56kn']
+[2022-06-25 09:12:01,718] {standard_task_runner.py:77} INFO - Job 353: Subtask parseJsonFile
+[2022-06-25 09:12:01,746] {logging_mixin.py:104} INFO - Running <TaskInstance: analyze_json_data.parseJsonFile 2022-06-25T09:11:40.779593+00:00 [running]> on host bb303642214a
+[2022-06-25 09:12:01,771] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Renato_Otescu
+AIRFLOW_CTX_DAG_ID=analyze_json_data
+AIRFLOW_CTX_TASK_ID=parseJsonFile
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-25T09:11:40.779593+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-25T09:11:40.779593+00:00
+[2022-06-25 09:12:01,785] {s3.py:793} INFO - Downloading source S3 file from Bucket airflow-raw with path countyData.json
+[2022-06-25 09:12:01,786] {base_aws.py:362} INFO - Airflow Connection: aws_conn_id=aws_default
+[2022-06-25 09:12:01,786] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-06-25 09:12:01,787] {base_aws.py:171} INFO - Credentials retrieved from extra_config['s3_config_file']
+[2022-06-25 09:12:01,787] {base_aws.py:81} INFO - Creating session with aws_access_key_id=AKIA2RNRZHIUSS5EYBCG region_name=None
+[2022-06-25 09:12:01,799] {base_aws.py:151} INFO - role_arn is None
+[2022-06-25 09:12:02,494] {base_aws.py:362} INFO - Airflow Connection: aws_conn_id=aws_default
+[2022-06-25 09:12:02,495] {base_aws.py:171} INFO - Credentials retrieved from extra_config['s3_config_file']
+[2022-06-25 09:12:02,495] {base_aws.py:81} INFO - Creating session with aws_access_key_id=AKIA2RNRZHIUSS5EYBCG region_name=None
+[2022-06-25 09:12:02,508] {base_aws.py:151} INFO - role_arn is None
+[2022-06-25 09:12:12,259] {python.py:118} INFO - Done. Returned value was: processParsedData
+[2022-06-25 09:12:12,260] {skipmixin.py:124} INFO - Following branch processParsedData
+[2022-06-25 09:12:12,265] {skipmixin.py:155} INFO - Skipping tasks []
+[2022-06-25 09:12:12,288] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=analyze_json_data, task_id=parseJsonFile, execution_date=20220625T091140, start_date=20220625T091201, end_date=20220625T091212
+[2022-06-25 09:12:12,325] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-25 09:12:12,368] {local_task_job.py:146} INFO - Task exited with return code 0

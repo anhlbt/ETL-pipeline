@@ -656,3 +656,325 @@
 [2022-06-18 15:58:52,240] {logging_mixin.py:104} INFO - [2022-06-18 15:58:52,240] {dag.py:1818} INFO - Sync 1 DAGs
 [2022-06-18 15:58:52,251] {logging_mixin.py:104} INFO - [2022-06-18 15:58:52,251] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
 [2022-06-18 15:58:52,275] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.301 seconds
+[2022-06-18 15:59:23,052] {scheduler_job.py:182} INFO - Started process (PID=4755) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 15:59:23,053] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 15:59:23,054] {logging_mixin.py:104} INFO - [2022-06-18 15:59:23,054] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 15:59:23,309] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 15:59:23,320] {logging_mixin.py:104} INFO - [2022-06-18 15:59:23,320] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 15:59:23,333] {logging_mixin.py:104} INFO - [2022-06-18 15:59:23,333] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 15:59:23,336] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.286 seconds
+[2022-06-18 15:59:54,056] {scheduler_job.py:182} INFO - Started process (PID=4890) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 15:59:54,057] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 15:59:54,057] {logging_mixin.py:104} INFO - [2022-06-18 15:59:54,057] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 15:59:54,305] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 15:59:54,319] {logging_mixin.py:104} INFO - [2022-06-18 15:59:54,319] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 15:59:54,332] {logging_mixin.py:104} INFO - [2022-06-18 15:59:54,332] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 15:59:54,335] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.281 seconds
+[2022-06-18 16:00:24,801] {scheduler_job.py:182} INFO - Started process (PID=5025) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:00:24,802] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:00:24,802] {logging_mixin.py:104} INFO - [2022-06-18 16:00:24,802] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:00:25,051] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:00:25,066] {logging_mixin.py:104} INFO - [2022-06-18 16:00:25,066] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:00:25,076] {logging_mixin.py:104} INFO - [2022-06-18 16:00:25,076] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:00:25,079] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.280 seconds
+[2022-06-18 16:00:55,461] {scheduler_job.py:182} INFO - Started process (PID=5160) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:00:55,462] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:00:55,462] {logging_mixin.py:104} INFO - [2022-06-18 16:00:55,462] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:00:55,710] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:00:55,725] {logging_mixin.py:104} INFO - [2022-06-18 16:00:55,725] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:00:55,735] {logging_mixin.py:104} INFO - [2022-06-18 16:00:55,735] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:00:55,738] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.280 seconds
+[2022-06-18 16:01:26,217] {scheduler_job.py:182} INFO - Started process (PID=5295) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:01:26,217] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:01:26,218] {logging_mixin.py:104} INFO - [2022-06-18 16:01:26,218] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:01:26,473] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:01:26,488] {logging_mixin.py:104} INFO - [2022-06-18 16:01:26,488] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:01:26,500] {logging_mixin.py:104} INFO - [2022-06-18 16:01:26,500] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:01:26,504] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.289 seconds
+[2022-06-18 16:01:56,960] {scheduler_job.py:182} INFO - Started process (PID=5430) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:01:56,961] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:01:56,962] {logging_mixin.py:104} INFO - [2022-06-18 16:01:56,961] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:01:57,209] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:01:57,223] {logging_mixin.py:104} INFO - [2022-06-18 16:01:57,223] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:01:57,233] {logging_mixin.py:104} INFO - [2022-06-18 16:01:57,233] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:01:57,236] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.278 seconds
+[2022-06-18 16:02:27,748] {scheduler_job.py:182} INFO - Started process (PID=5565) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:02:27,748] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:02:27,749] {logging_mixin.py:104} INFO - [2022-06-18 16:02:27,749] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:02:28,004] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:02:28,019] {logging_mixin.py:104} INFO - [2022-06-18 16:02:28,019] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:02:28,030] {logging_mixin.py:104} INFO - [2022-06-18 16:02:28,030] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:02:28,033] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.287 seconds
+[2022-06-18 16:02:58,860] {scheduler_job.py:182} INFO - Started process (PID=5700) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:02:58,861] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:02:58,861] {logging_mixin.py:104} INFO - [2022-06-18 16:02:58,861] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:02:59,137] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:02:59,149] {logging_mixin.py:104} INFO - [2022-06-18 16:02:59,149] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:02:59,160] {logging_mixin.py:104} INFO - [2022-06-18 16:02:59,160] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:02:59,164] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.306 seconds
+[2022-06-18 16:03:29,940] {scheduler_job.py:182} INFO - Started process (PID=5835) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:03:29,941] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:03:29,941] {logging_mixin.py:104} INFO - [2022-06-18 16:03:29,941] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:03:30,204] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:03:30,216] {logging_mixin.py:104} INFO - [2022-06-18 16:03:30,216] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:03:30,229] {logging_mixin.py:104} INFO - [2022-06-18 16:03:30,229] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:03:30,232] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.295 seconds
+[2022-06-18 16:04:01,039] {scheduler_job.py:182} INFO - Started process (PID=5970) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:04:01,040] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:04:01,040] {logging_mixin.py:104} INFO - [2022-06-18 16:04:01,040] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:04:01,284] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:04:01,297] {logging_mixin.py:104} INFO - [2022-06-18 16:04:01,297] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:04:01,309] {logging_mixin.py:104} INFO - [2022-06-18 16:04:01,309] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:04:01,312] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.275 seconds
+[2022-06-18 16:04:32,117] {scheduler_job.py:182} INFO - Started process (PID=6105) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:04:32,118] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:04:32,119] {logging_mixin.py:104} INFO - [2022-06-18 16:04:32,119] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:04:32,374] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:04:32,385] {logging_mixin.py:104} INFO - [2022-06-18 16:04:32,385] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:04:32,396] {logging_mixin.py:104} INFO - [2022-06-18 16:04:32,396] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:04:32,399] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.285 seconds
+[2022-06-18 16:05:03,180] {scheduler_job.py:182} INFO - Started process (PID=6240) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:05:03,181] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:05:03,181] {logging_mixin.py:104} INFO - [2022-06-18 16:05:03,181] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:05:03,432] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:05:03,446] {logging_mixin.py:104} INFO - [2022-06-18 16:05:03,446] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:05:03,456] {logging_mixin.py:104} INFO - [2022-06-18 16:05:03,456] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:05:03,459] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.281 seconds
+[2022-06-18 16:05:34,329] {scheduler_job.py:182} INFO - Started process (PID=6375) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:05:34,329] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:05:34,330] {logging_mixin.py:104} INFO - [2022-06-18 16:05:34,330] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:05:34,576] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:05:34,590] {logging_mixin.py:104} INFO - [2022-06-18 16:05:34,590] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:05:34,602] {logging_mixin.py:104} INFO - [2022-06-18 16:05:34,602] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:05:34,605] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.279 seconds
+[2022-06-18 16:06:05,337] {scheduler_job.py:182} INFO - Started process (PID=6510) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:06:05,338] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:06:05,338] {logging_mixin.py:104} INFO - [2022-06-18 16:06:05,338] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:06:05,598] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:06:05,612] {logging_mixin.py:104} INFO - [2022-06-18 16:06:05,612] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:06:05,623] {logging_mixin.py:104} INFO - [2022-06-18 16:06:05,623] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:06:05,626] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.291 seconds
+[2022-06-18 16:06:36,121] {scheduler_job.py:182} INFO - Started process (PID=6645) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:06:36,123] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:06:36,123] {logging_mixin.py:104} INFO - [2022-06-18 16:06:36,123] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:06:36,578] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:06:36,594] {logging_mixin.py:104} INFO - [2022-06-18 16:06:36,594] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:06:36,613] {logging_mixin.py:104} INFO - [2022-06-18 16:06:36,613] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:06:36,619] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.501 seconds
+[2022-06-18 16:07:06,774] {scheduler_job.py:182} INFO - Started process (PID=6780) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:07:06,776] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:07:06,776] {logging_mixin.py:104} INFO - [2022-06-18 16:07:06,776] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:07:07,046] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:07:07,061] {logging_mixin.py:104} INFO - [2022-06-18 16:07:07,061] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:07:07,075] {logging_mixin.py:104} INFO - [2022-06-18 16:07:07,075] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:07:07,078] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.306 seconds
+[2022-06-18 16:07:37,857] {scheduler_job.py:182} INFO - Started process (PID=6915) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:07:37,858] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:07:37,859] {logging_mixin.py:104} INFO - [2022-06-18 16:07:37,859] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:07:38,107] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:07:38,123] {logging_mixin.py:104} INFO - [2022-06-18 16:07:38,122] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:07:38,133] {logging_mixin.py:104} INFO - [2022-06-18 16:07:38,133] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:07:38,137] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.281 seconds
+[2022-06-18 16:08:08,887] {scheduler_job.py:182} INFO - Started process (PID=7050) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:08:08,888] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:08:08,889] {logging_mixin.py:104} INFO - [2022-06-18 16:08:08,889] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:08:09,148] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:08:09,161] {logging_mixin.py:104} INFO - [2022-06-18 16:08:09,161] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:08:09,173] {logging_mixin.py:104} INFO - [2022-06-18 16:08:09,173] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:08:09,176] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.291 seconds
+[2022-06-18 16:08:39,533] {scheduler_job.py:182} INFO - Started process (PID=7185) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:08:39,534] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:08:39,535] {logging_mixin.py:104} INFO - [2022-06-18 16:08:39,535] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:08:39,780] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:08:39,793] {logging_mixin.py:104} INFO - [2022-06-18 16:08:39,793] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:08:39,805] {logging_mixin.py:104} INFO - [2022-06-18 16:08:39,805] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:08:39,808] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.277 seconds
+[2022-06-18 16:09:10,251] {scheduler_job.py:182} INFO - Started process (PID=7320) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:09:10,252] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:09:10,253] {logging_mixin.py:104} INFO - [2022-06-18 16:09:10,253] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:09:10,497] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:09:10,510] {logging_mixin.py:104} INFO - [2022-06-18 16:09:10,510] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:09:10,522] {logging_mixin.py:104} INFO - [2022-06-18 16:09:10,522] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:09:10,525] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.276 seconds
+[2022-06-18 16:09:40,985] {scheduler_job.py:182} INFO - Started process (PID=7455) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:09:40,986] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:09:40,986] {logging_mixin.py:104} INFO - [2022-06-18 16:09:40,986] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:09:41,237] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:09:41,250] {logging_mixin.py:104} INFO - [2022-06-18 16:09:41,250] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:09:41,262] {logging_mixin.py:104} INFO - [2022-06-18 16:09:41,262] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:09:41,266] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.283 seconds
+[2022-06-18 16:10:11,736] {scheduler_job.py:182} INFO - Started process (PID=7590) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:10:11,737] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:10:11,737] {logging_mixin.py:104} INFO - [2022-06-18 16:10:11,737] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:10:11,982] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:10:11,995] {logging_mixin.py:104} INFO - [2022-06-18 16:10:11,995] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:10:12,008] {logging_mixin.py:104} INFO - [2022-06-18 16:10:12,008] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:10:12,011] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.277 seconds
+[2022-06-18 16:10:42,429] {scheduler_job.py:182} INFO - Started process (PID=7725) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:10:42,430] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:10:42,430] {logging_mixin.py:104} INFO - [2022-06-18 16:10:42,430] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:10:42,681] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:10:42,694] {logging_mixin.py:104} INFO - [2022-06-18 16:10:42,694] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:10:42,709] {logging_mixin.py:104} INFO - [2022-06-18 16:10:42,709] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:10:42,712] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.285 seconds
+[2022-06-18 16:11:13,165] {scheduler_job.py:182} INFO - Started process (PID=7860) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:11:13,165] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:11:13,166] {logging_mixin.py:104} INFO - [2022-06-18 16:11:13,166] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:11:13,414] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:11:13,427] {logging_mixin.py:104} INFO - [2022-06-18 16:11:13,427] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:11:13,440] {logging_mixin.py:104} INFO - [2022-06-18 16:11:13,440] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:11:13,443] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.281 seconds
+[2022-06-18 16:11:43,897] {scheduler_job.py:182} INFO - Started process (PID=7995) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:11:43,898] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:11:43,899] {logging_mixin.py:104} INFO - [2022-06-18 16:11:43,899] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:11:44,148] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:11:44,162] {logging_mixin.py:104} INFO - [2022-06-18 16:11:44,162] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:11:44,172] {logging_mixin.py:104} INFO - [2022-06-18 16:11:44,172] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:11:44,175] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.281 seconds
+[2022-06-18 16:12:14,644] {scheduler_job.py:182} INFO - Started process (PID=8130) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:12:14,645] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:12:14,646] {logging_mixin.py:104} INFO - [2022-06-18 16:12:14,646] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:12:14,896] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:12:14,911] {logging_mixin.py:104} INFO - [2022-06-18 16:12:14,911] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:12:14,922] {logging_mixin.py:104} INFO - [2022-06-18 16:12:14,922] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:12:14,925] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.284 seconds
+[2022-06-18 16:12:45,404] {scheduler_job.py:182} INFO - Started process (PID=8265) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:12:45,405] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:12:45,406] {logging_mixin.py:104} INFO - [2022-06-18 16:12:45,406] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:12:45,651] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:12:45,666] {logging_mixin.py:104} INFO - [2022-06-18 16:12:45,666] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:12:45,676] {logging_mixin.py:104} INFO - [2022-06-18 16:12:45,676] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:12:45,679] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.277 seconds
+[2022-06-18 16:13:16,085] {scheduler_job.py:182} INFO - Started process (PID=8400) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:13:16,086] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:13:16,086] {logging_mixin.py:104} INFO - [2022-06-18 16:13:16,086] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:13:16,338] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:13:16,353] {logging_mixin.py:104} INFO - [2022-06-18 16:13:16,353] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:13:16,365] {logging_mixin.py:104} INFO - [2022-06-18 16:13:16,365] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:13:16,368] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.286 seconds
+[2022-06-18 16:13:46,759] {scheduler_job.py:182} INFO - Started process (PID=8535) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:13:46,760] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:13:46,761] {logging_mixin.py:104} INFO - [2022-06-18 16:13:46,761] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:13:47,013] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:13:47,027] {logging_mixin.py:104} INFO - [2022-06-18 16:13:47,026] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:13:47,037] {logging_mixin.py:104} INFO - [2022-06-18 16:13:47,037] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:13:47,040] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.283 seconds
+[2022-06-18 16:14:17,455] {scheduler_job.py:182} INFO - Started process (PID=8670) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:14:17,456] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:14:17,456] {logging_mixin.py:104} INFO - [2022-06-18 16:14:17,456] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:14:17,706] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:14:17,720] {logging_mixin.py:104} INFO - [2022-06-18 16:14:17,719] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:14:17,732] {logging_mixin.py:104} INFO - [2022-06-18 16:14:17,732] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:14:17,735] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.282 seconds
+[2022-06-18 16:14:48,137] {scheduler_job.py:182} INFO - Started process (PID=8805) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:14:48,138] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:14:48,138] {logging_mixin.py:104} INFO - [2022-06-18 16:14:48,138] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:14:48,388] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:14:48,403] {logging_mixin.py:104} INFO - [2022-06-18 16:14:48,403] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:14:48,414] {logging_mixin.py:104} INFO - [2022-06-18 16:14:48,414] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:14:48,417] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.282 seconds
+[2022-06-18 16:15:18,895] {scheduler_job.py:182} INFO - Started process (PID=8940) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:15:18,896] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:15:18,897] {logging_mixin.py:104} INFO - [2022-06-18 16:15:18,897] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:15:19,174] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:15:19,189] {logging_mixin.py:104} INFO - [2022-06-18 16:15:19,189] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:15:19,202] {logging_mixin.py:104} INFO - [2022-06-18 16:15:19,202] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:15:19,206] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.314 seconds
+[2022-06-18 16:15:49,600] {scheduler_job.py:182} INFO - Started process (PID=9075) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:15:49,601] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:15:49,601] {logging_mixin.py:104} INFO - [2022-06-18 16:15:49,601] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:15:49,859] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:15:49,873] {logging_mixin.py:104} INFO - [2022-06-18 16:15:49,873] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:15:49,884] {logging_mixin.py:104} INFO - [2022-06-18 16:15:49,884] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:15:49,887] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.289 seconds
+[2022-06-18 16:16:20,274] {scheduler_job.py:182} INFO - Started process (PID=9210) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:16:20,275] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:16:20,276] {logging_mixin.py:104} INFO - [2022-06-18 16:16:20,276] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:16:20,529] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:16:20,542] {logging_mixin.py:104} INFO - [2022-06-18 16:16:20,542] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:16:20,554] {logging_mixin.py:104} INFO - [2022-06-18 16:16:20,553] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:16:20,557] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.284 seconds
+[2022-06-18 16:16:50,996] {scheduler_job.py:182} INFO - Started process (PID=9345) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:16:50,997] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:16:50,997] {logging_mixin.py:104} INFO - [2022-06-18 16:16:50,997] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:16:51,253] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:16:51,269] {logging_mixin.py:104} INFO - [2022-06-18 16:16:51,269] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:16:51,281] {logging_mixin.py:104} INFO - [2022-06-18 16:16:51,281] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:16:51,285] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.291 seconds
+[2022-06-18 16:17:21,732] {scheduler_job.py:182} INFO - Started process (PID=9480) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:17:21,733] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:17:21,734] {logging_mixin.py:104} INFO - [2022-06-18 16:17:21,733] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:17:22,003] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:17:22,019] {logging_mixin.py:104} INFO - [2022-06-18 16:17:22,019] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:17:22,037] {logging_mixin.py:104} INFO - [2022-06-18 16:17:22,037] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:17:22,041] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.312 seconds
+[2022-06-18 16:17:52,439] {scheduler_job.py:182} INFO - Started process (PID=9615) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:17:52,439] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:17:52,440] {logging_mixin.py:104} INFO - [2022-06-18 16:17:52,440] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:17:52,698] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:17:52,708] {logging_mixin.py:104} INFO - [2022-06-18 16:17:52,708] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:17:52,721] {logging_mixin.py:104} INFO - [2022-06-18 16:17:52,721] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:17:52,724] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.288 seconds
+[2022-06-18 16:18:23,180] {scheduler_job.py:182} INFO - Started process (PID=9750) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:18:23,181] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:18:23,182] {logging_mixin.py:104} INFO - [2022-06-18 16:18:23,182] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:18:23,429] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:18:23,444] {logging_mixin.py:104} INFO - [2022-06-18 16:18:23,444] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:18:23,454] {logging_mixin.py:104} INFO - [2022-06-18 16:18:23,454] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:18:23,457] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.279 seconds
+[2022-06-18 16:18:53,811] {scheduler_job.py:182} INFO - Started process (PID=9885) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:18:53,812] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:18:53,813] {logging_mixin.py:104} INFO - [2022-06-18 16:18:53,813] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:18:54,063] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:18:54,073] {logging_mixin.py:104} INFO - [2022-06-18 16:18:54,073] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:18:54,086] {logging_mixin.py:104} INFO - [2022-06-18 16:18:54,086] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:18:54,089] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.280 seconds
+[2022-06-18 16:19:24,496] {scheduler_job.py:182} INFO - Started process (PID=10020) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:19:24,497] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:19:24,498] {logging_mixin.py:104} INFO - [2022-06-18 16:19:24,498] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:19:24,752] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:19:24,767] {logging_mixin.py:104} INFO - [2022-06-18 16:19:24,766] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:19:24,780] {logging_mixin.py:104} INFO - [2022-06-18 16:19:24,780] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:19:24,784] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.290 seconds
+[2022-06-18 16:19:55,157] {scheduler_job.py:182} INFO - Started process (PID=10155) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:19:55,158] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:19:55,158] {logging_mixin.py:104} INFO - [2022-06-18 16:19:55,158] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:19:55,416] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:19:55,428] {logging_mixin.py:104} INFO - [2022-06-18 16:19:55,428] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:19:55,439] {logging_mixin.py:104} INFO - [2022-06-18 16:19:55,439] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:19:55,442] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.288 seconds
+[2022-06-18 16:20:25,873] {scheduler_job.py:182} INFO - Started process (PID=10290) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:20:25,874] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:20:25,875] {logging_mixin.py:104} INFO - [2022-06-18 16:20:25,875] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:20:26,126] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:20:26,136] {logging_mixin.py:104} INFO - [2022-06-18 16:20:26,136] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:20:26,148] {logging_mixin.py:104} INFO - [2022-06-18 16:20:26,148] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:20:26,151] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.281 seconds
+[2022-06-18 16:20:56,584] {scheduler_job.py:182} INFO - Started process (PID=10425) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:20:56,585] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:20:56,585] {logging_mixin.py:104} INFO - [2022-06-18 16:20:56,585] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:20:56,838] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:20:56,852] {logging_mixin.py:104} INFO - [2022-06-18 16:20:56,851] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:20:56,862] {logging_mixin.py:104} INFO - [2022-06-18 16:20:56,862] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:20:56,865] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.284 seconds
+[2022-06-18 16:21:27,339] {scheduler_job.py:182} INFO - Started process (PID=10560) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:21:27,340] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:21:27,341] {logging_mixin.py:104} INFO - [2022-06-18 16:21:27,341] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:21:27,597] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:21:27,611] {logging_mixin.py:104} INFO - [2022-06-18 16:21:27,611] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:21:27,624] {logging_mixin.py:104} INFO - [2022-06-18 16:21:27,624] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:21:27,628] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.291 seconds
+[2022-06-18 16:22:39,021] {scheduler_job.py:182} INFO - Started process (PID=253) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:22:39,022] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:22:39,023] {logging_mixin.py:104} INFO - [2022-06-18 16:22:39,022] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:22:39,431] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:22:39,451] {logging_mixin.py:104} INFO - [2022-06-18 16:22:39,451] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:22:39,463] {logging_mixin.py:104} INFO - [2022-06-18 16:22:39,463] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:22:39,468] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.448 seconds
+[2022-06-18 16:23:10,040] {scheduler_job.py:182} INFO - Started process (PID=388) to work on /opt/airflow/dags/dagRun.py
+[2022-06-18 16:23:10,041] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dagRun.py for tasks to queue
+[2022-06-18 16:23:10,041] {logging_mixin.py:104} INFO - [2022-06-18 16:23:10,041] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:23:10,342] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['analyze_json_data']) retrieved from /opt/airflow/dags/dagRun.py
+[2022-06-18 16:23:10,356] {logging_mixin.py:104} INFO - [2022-06-18 16:23:10,356] {dag.py:1818} INFO - Sync 1 DAGs
+[2022-06-18 16:23:10,369] {logging_mixin.py:104} INFO - [2022-06-18 16:23:10,369] {dag.py:2273} INFO - Setting next_dagrun for analyze_json_data to 2022-06-18 00:00:00+00:00
+[2022-06-18 16:23:10,372] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dagRun.py took 0.335 seconds
