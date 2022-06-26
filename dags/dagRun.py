@@ -29,8 +29,8 @@ else:
     dbname = 'dev'
     host = 'redshift-cluster-1.cfu1yuuzougo.ap-southeast-1.redshift.amazonaws.com'
     port = 5439
-    user = 'anhlbto'
-    password = 'Lbtanh123'
+    user = ''
+    password = ''
     awsIAMrole = 'arn:aws:iam::724611709481:role/aws-service-role/redshift.amazonaws.com/AWSServiceRoleForRedshift'
 
 
